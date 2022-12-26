@@ -10,28 +10,137 @@
 <body>
     <main>
         <section id="cadastrar">
-            <form action="" method="post" id="actionForm">
+
+            <form id="actionForm">
                 <div class="tdsinputs">
 
                     <h1>Cadastrar</h1> <br>
+                    
+                    <div class="div-input">
+                        <input type="text" placeholder="Nome" class="input requerid" oninput="nameValidate()">
+                        <span class="span-form">O nome deve ter no minimo 3 Caracteres</span>
+                    </div>
+                    <div class="div-input">
+                        <input type="text" placeholder="Sobrenome" class="input requerid" oninput="nameSobreValidate()">
+                        <span class="span-form">O Sobernome deve ter no minimo 3 Caracteres</span>
+                    </div>
+                    <div class="div-input">
+                        <input type="text" placeholder="Email" class="input requerid" oninput="emailValidate()"> 
+                        <span class="span-form">Email invalido</span>
+                    </div>
+                    <div class="div-input">
+                        <input type="text" placeholder="Senha" class="input requerid" oninput="passwordValidate()">
+                        <span class="span-form">Senha invalida</span>
 
-                    <input type="text" placeholder="Nome" class="input">
-                    <input type="text" placeholder="Sobrenome" class="input">
-                    <input type="text" placeholder="Email" class="input">
-                    <input type="text" placeholder="Senha" class="input">
-                    <input type="text" placeholder="Confirme Senha" class="input"><br>
+                    </div class="div-input">
+                    <div class="div-input">
+                        <input type="text" placeholder="Confirme Senha" class="input requerid" oninput="passwordIgual()">
+                        <span class="span-form">Senha não esta igual</span>
 
-                    <button>Cadastrar</button>
+                    </div>
+                     
+                    
+                    
+
+                    
+
+                   
                     
 
                 </div>
 
                 
-
+                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
     
-    
 </body>
+<script>
+    const formulario = document.getElementById('actionForm');
+    const campos = document.querySelectorAll('.requerid');
+    const spans = document.querySelectorAll('.span-form');
+    const emailcHack = /\S+@\S+\.\S+/;
+    
+    formulario.addEventListener('submit', (event) => {
+        event.preventDefault();
+        console('oasdfsd');
+    })
+
+    function setError(index){
+        campos[index].style.border = '2px solid red';
+        spans[index].style.display = 'block';
+    }
+
+    function setOk(index){
+
+        campos[index].style.border = '2px solid green';
+        spans[index].style.display = 'none';
+
+    }
+
+    function nameValidate(){
+
+        if(campos[0].value.length < 3){
+
+            setError(0);
+            
+        }else{
+            setOk(0);
+            
+        }
+
+    }
+
+    function nameSobreValidate(){
+
+        if(campos[1].value.length < 3){
+
+            setError(1);
+            
+        }else{
+            setOk(1);
+            
+        }
+
+    }
+    function emailValidate(){
+        
+        if(!emailcHack.test(campos[2].value)){
+            setError(2);
+        }else{
+            setOk(2);
+        }
+    }
+
+     function passwordValidate(){
+        if(campos[3].value.length < 8){
+
+            setError(3);
+
+        }else{
+            setOk(3);
+            passwordIgual();
+        }
+     }
+
+     function passwordIgual(){
+
+        if(campos[3].value == campos[4].value && campos[4].value.length >= 8){
+
+            setOk(4);
+
+        }else{
+
+            setError(4);
+        }
+        
+     }
+
+   
+
+
+    
+</script>
+
 </html>
