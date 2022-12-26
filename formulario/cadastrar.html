@@ -49,8 +49,10 @@
 
                 </div>
 
+                <div class="botao">
+                    <button type="submit">Enviar</button>
+                </div>
                 
-                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
@@ -64,8 +66,14 @@
     
     formulario.addEventListener('submit', (event) => {
         event.preventDefault();
-        console('oasdfsd');
-    })
+        nameValidate();
+        nameSobreValidate();
+        emailValidate();
+        passwordValidate();
+        passwordIgual();
+
+        
+    });
 
     function setError(index){
         campos[index].style.border = '2px solid red';

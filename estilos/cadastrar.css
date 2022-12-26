@@ -39,10 +39,26 @@ section#cadastrar > form#actionForm{
     height: 75%;
 }
 
+section#cadastrar > form#actionForm > div.botao{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section#cadastrar > form#actionForm > div.botao > button{
+    width: 80%;
+    height: 30px;
+    border-radius: 40px;
+}
+
+
 section#cadastrar > form#actionForm > div.tdsinputs{
     margin-top: 38px;
-    height: 100%;
-   
+    height: 95%;
     text-align: center;
     
     
