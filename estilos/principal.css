@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    /*
+    background: url(/imagens/familia.jpg) no-repeat;
+    background-size: cover;
+    */
+    
+}
+
+
+header#header-principal > nav.nav-bar{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    
+}
+
+header#header-principal > nav.nav-bar > div.logo{
+    width: 70%;
+   
+    display: flex;
+    align-items: center;
+}
+
+header#header-principal > nav.nav-bar > div.botao{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header#header-principal > nav.nav-bar > div.botao a{
+    width: 10%;
+    padding: 3px;
+    margin: 30px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+header#header-principal > nav.nav-bar > div.botao a:hover{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(190, 203, 203);
+    border-radius: 5px;
+
+}

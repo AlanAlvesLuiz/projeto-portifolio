@@ -96,12 +96,16 @@ section#login > div#formulario > form#formOriginal > div.botao{
     justify-content: center;
 }
 
-section#login > div#formulario > form#formOriginal > div.botao > input{
+section#login > div#formulario > form#formOriginal > div.botao > button{
     width: 80%;
     padding: 10px;
     border-radius: 20px;
     
+    
 
+}
+section#login > div#formulario > form#formOriginal > div.botao > button a{
+    text-decoration: none;
 }
 
 section#login > div#formulario > form#formOriginal > div.botao > input:hover{
