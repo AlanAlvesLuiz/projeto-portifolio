@@ -7,10 +7,9 @@
 body, html{
     width: 100vw;
     height: 100vh;
-    /*
-    background: url(/imagens/familia.jpg) no-repeat;
-    background-size: cover;
-    */
+    /*background-color: #363543;*/
+    
+    
     
 }
 
@@ -19,38 +18,155 @@ header#header-principal > nav.nav-bar{
     display: flex;
     width: 100%;
     height: 70px;
+    background-color: red;
     
 }
 
-header#header-principal > nav.nav-bar > div.logo{
-    width: 70%;
-   
+
+header#header-principal > nav.nav-bar > div.header-icons{
     display: flex;
-    align-items: center;
+    width: 100%;
+    padding: auto auto;
+    
 }
 
-header#header-principal > nav.nav-bar > div.botao{
+header#header-principal > nav.nav-bar > div.header-icons > div.logo{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    
+    
+
+}
+
+header#header-principal > nav.nav-bar > div.header-icons > div.icons-contato{
     width: 30%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    
 }
 
-header#header-principal > nav.nav-bar > div.botao a{
-    width: 10%;
-    padding: 3px;
-    margin: 30px;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-}
-
-header#header-principal > nav.nav-bar > div.botao a:hover{
-    height: 40px;
+header#header-principal > nav.nav-bar > div.header-icons > div.icons-contato > div.img{
+    width: 100%;
+    background-color: blueviolet;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: rgb(190, 203, 203);
-    border-radius: 5px;
+    align-items: center;
 
 }
+
+
+header#header-principal > nav.nav-bar > div.header-icons > div.icons-contato > div.img img{
+    width: 100%;
+    padding: 70px;
+    
+    
+
+}
+
+
+header#header-principal > nav.nav-bar > div.header-icons > div.botao{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+header#header-principal > nav.nav-bar > div.header-icons > div.botao a{
+    padding: 10px;
+    margin: 5%;
+    text-decoration: none;
+    color: white;
+}
+
+main#main-principal{
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+main#main-principal > section.section-principal{
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+
+
+}
+
+main#main-principal > section.section-principal > div.git-hub{
+   
+    height: 100px;
+    width: 80%;
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 30px;
+}
+
+main#main-principal > section.section-principal > div.git-hub > div.contato{
+    width: 26.6%;
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+main#main-principal > section.section-principal > div.div-principal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+main#main-principal > section.section-principal > div.div-principal > div.blocoEsquerdo{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main#main-principal > section.section-principal > div.div-principal > div.foto{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main#main-principal > section.section-principal > div.div-principal > div.foto > img{
+    border-radius: 100%;
+}
+
+main#main-principal > section.section-principal > div.div-principal > div.Bloco-direito{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main#main-principal > section.section-two{
+    padding-top: 120px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+
+
+}
+
+main#main-principal > section.section-two > div.div-one{
+    width: 50%;
+}
+
+main#main-principal > section.section-two > div.div-two{
+    width: 50%;
+    background-color: aqua;
+}
+
