@@ -4,24 +4,69 @@
     box-sizing: border-box;
 }
 
+/*
+    Paleta de cores 
+
+    #13293D - azul escuro
+    #1b3a56 - azul contraste
+    #247BA0 - azul mesclado
+    #1B98E0 - azul claro
+*/
+
 body, html{
     width: 100vw;
     height: 100vh;
-    /*background-color: #363543;*/
+    background-color: #1b3a56;
     
-    
+
     
 }
 
+
+header#header-principal{
+    width: 100%;
+    height: 10%;
+}
+
+
+header#header-principal > div.git-hub{
+    position: absolute;
+    display: flex;
+    width: 80%;
+    height: 70px;
+    top: 56%;
+    transform: translate(12.5%, -50%);
+    background-color: #1f4669;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header#header-principal > div.git-hub > div.contato{
+
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+header#header-principal > div.git-hub > div.contato a{
+    background-color: #0e1f2f;
+    padding: 10px 70px;
+    text-decoration: none;
+    color: white;
+}
 
 header#header-principal > nav.nav-bar{
     display: flex;
     width: 100%;
-    height: 70px;
-    background-color: red;
+    height: 100%;
+    
     
 }
-
 
 header#header-principal > nav.nav-bar > div.header-icons{
     display: flex;
@@ -31,7 +76,8 @@ header#header-principal > nav.nav-bar > div.header-icons{
 }
 
 header#header-principal > nav.nav-bar > div.header-icons > div.logo{
-    width: 35%;
+    width: 10%;
+    margin-left: 5%;
     display: flex;
     align-items: center;
     
@@ -39,16 +85,27 @@ header#header-principal > nav.nav-bar > div.header-icons > div.logo{
 
 }
 
-header#header-principal > nav.nav-bar > div.header-icons > div.icons-contato{
+header#header-principal > nav.nav-bar > div.header-icons > div.botao{
     width: 30%;
     display: flex;
     justify-content: center;
+    align-items: center;
+
+
+}
+
+header#header-principal > nav.nav-bar > div.header-icons > div.icons-contato{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 12.5%;
     
 }
 
 header#header-principal > nav.nav-bar > div.header-icons > div.icons-contato > div.img{
     width: 100%;
-    background-color: blueviolet;
+    margin-left: 20%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,61 +114,58 @@ header#header-principal > nav.nav-bar > div.header-icons > div.icons-contato > d
 
 
 header#header-principal > nav.nav-bar > div.header-icons > div.icons-contato > div.img img{
-    width: 100%;
-    padding: 70px;
+    width: 150px;
+    padding: 55px;
     
     
 
 }
 
 
-header#header-principal > nav.nav-bar > div.header-icons > div.botao{
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-
-}
 
 header#header-principal > nav.nav-bar > div.header-icons > div.botao a{
     padding: 10px;
     margin: 5%;
     text-decoration: none;
-    color: white;
+    color: rgb(209, 209, 209);
 }
 
+header#header-principal > nav.nav-bar > div.header-icons > div.botao a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+
 main#main-principal{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 90%;
     
 }
 
 main#main-principal > section.section-principal{
     width: 100%;
     height: 50%;
-    background-color: blue;
-
-
+    
 }
 
-main#main-principal > section.section-principal > div.git-hub{
-   
-    height: 100px;
-    width: 80%;
-    margin: auto auto;
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    border-radius: 30px;
-}
+
 
 main#main-principal > section.section-principal > div.git-hub > div.contato{
     width: 26.6%;
     margin: auto auto;
     display: flex;
     justify-content: center;
+   
+    padding: 10px;
+    border-radius: 20px;
     
+}
+
+main#main-principal > section.section-principal > div.git-hub > div.contato a{
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -120,6 +174,7 @@ main#main-principal > section.section-principal > div.div-principal{
     width: 100%;
     height: 100%;
     display: flex;
+    color: rgb(255, 255, 255);
 }
 
 main#main-principal > section.section-principal > div.div-principal > div.blocoEsquerdo{
@@ -153,20 +208,46 @@ main#main-principal > section.section-principal > div.div-principal > div.Bloco-
 }
 
 main#main-principal > section.section-two{
-    padding-top: 120px;
+    padding-top: 90px;
+    
     width: 100%;
     height: 50%;
     display: flex;
+    background-color: #13293D;
 
 
 }
 
 main#main-principal > section.section-two > div.div-one{
     width: 50%;
+    height: 100%;
 }
 
 main#main-principal > section.section-two > div.div-two{
     width: 50%;
-    background-color: aqua;
+    height: 100%;
+    
+
 }
 
+main#main-principal > section.section-two > div.div-two > div.experiencias > div.filho-ex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+main#main-principal > section.section-two > div.div-two > div.experiencias > div.filho-ex > div.f-f-ex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+main#main-principal > section.section-two > div.div-two > div.experiencias > div.filho-ex > div.f-f-ex img{
+    height: 90px;
+    width: 100px;
+    border-radius: 100%;
+
+}
