@@ -136,6 +136,7 @@ header#header-principal > nav.nav-bar > div.header-icons > div.botao a{
     margin: 5%;
     text-decoration: none;
     color: rgb(209, 209, 209);
+    font-size: 20px;
 }
 
 header#header-principal > nav.nav-bar > div.header-icons > div.botao a:hover{
