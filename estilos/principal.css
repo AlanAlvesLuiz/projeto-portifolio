@@ -191,6 +191,7 @@ main#main-principal > section.section-principal > div.div-principal > div.blocoE
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10%;
 }
 
 main#main-principal > section.section-principal > div.div-principal > div.foto{
@@ -234,6 +235,9 @@ main#main-principal > section.section-two > div.div-one{
     color: rgb(173, 171, 171);
     font-size: medium;
     padding: 2% 5% 0% 5%;
+    
+    
+    
 }
 
 main#main-principal > section.section-two > div.div-two{
