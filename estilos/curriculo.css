@@ -7,14 +7,30 @@
 body, html{
     width: 100vw;
     height: 100vh;
-    background-color: aqua;
+   
 }
 
-.header-principal{
-    width: 95%; 
-    height: 250px; 
-    border-top: 0px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-left: 100px solid #4C4B63;
-    background-color: blueviolet;
+main#main-principal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+    
+}
+
+main#main-principal > div.total-part{
+    background-color: black;
+    color: white;
+    width: 30%;
+
+    
+}
+
+main#main-principal > div.total-part > div.first-name{
+    text-align: center;
+    height: 30%;
+}
+
+main#main-principal > div.total-part > div.codin-languagem-program{
+    text-align: center;
 }
