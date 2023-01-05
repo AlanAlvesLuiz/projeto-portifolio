@@ -8,9 +8,24 @@ body, html{
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to right, #4c6c81, #083263);
+    color: white;
     
    
 }
+
+h1{
+    font-size: 55px;
+    display: flex;
+    justify-content: right;
+}
+
+p{
+    display: flex;
+    justify-content: right;
+}
+
+
+
 
 main#main-principal{
     width: 100vw;
@@ -35,3 +50,4 @@ main#main-principal > div.total-part > div.first-name{
 main#main-principal > div.total-part > div.codin-languagem-program{
     text-align: center;
 }
+
