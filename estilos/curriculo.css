@@ -7,7 +7,7 @@
 body, html{
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to right, #114060, #154780);
+     background-image: linear-gradient(to right, #114060, #154780); 
     color: white;
     
    
@@ -55,4 +55,21 @@ main#main-principal > div.total-part > div.social img{
     width: 55px;
     margin-bottom: 20px;
 }
+
+main#main-principal > div.escrita > div.Alan-front-end{
+    font-size: 22px;
+    
+    padding: 3%;
+    height: 25%;
+    
+}
+
+main#main-principal > div.escrita > div.perfil{
+   
+    height: 75%;
+    padding: 3%;
+    font-size: 22px;
+}
+
+
 
