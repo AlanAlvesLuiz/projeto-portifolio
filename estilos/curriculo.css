@@ -82,6 +82,7 @@ main#main-principal > div.escrita > div.Alan-front-end{
 main#main-principal > div.escrita > div.Alan-front-end img{
     width: 18px;
     height: 18px;
+    
 }
 
 main#main-principal > div.escrita > div.Alan-front-end hr{
@@ -109,7 +110,8 @@ main#main-principal > div.escrita > div.Alan-front-end > div.redes-sociais-empre
 
 
 main#main-principal > div.escrita > div.Alan-front-end > div.redes-sociais-empregos a{
-    width: 100%;
+    text-decoration: none;
+    color: white;
 }
 
 main#main-principal > div.escrita > div.Alan-front-end > div.pontos-positivos{
