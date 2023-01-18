@@ -1,0 +1,54 @@
+    /* #13293D - azul escuro 
+    #1b3a56 - azul contraste
+    #247BA0 - azul mesclado
+    #1B98E0 - azul claro
+    */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+div.menu{
+    display: flex; 
+}
+
+div.main-principal{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div.foto{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div.foto img{
+    width: 50%;
+    border-radius: 100%;
+}
+
+div.sobremim{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10%;
+}
