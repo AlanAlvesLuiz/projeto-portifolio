@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: #1b3a56;
     color: white;
     width: 100vw;
     height: 100vh;
@@ -18,7 +18,46 @@ body{
 }
 
 div.menu{
-    display: flex; 
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+div.menu > div.name{
+    width: 50%;
+    text-align: center;
+    margin-right: 200px;
+    font-size: x-large;
+
+}
+
+div.menu > div.links-principal{
+    width: 50%;
+    text-align: center;
+    
+}
+
+div.menu > div.links-principal a{
+    color: rgb(221, 232, 241);
+    text-decoration: none;
+    padding-left: 80px;
+    font-size: medium;
+  
+   
+
+
+}
+
+div.menu > div.links-principal a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-left: 80px;
+    font-size: x-large;
+
 }
 
 div.main-principal{
@@ -31,7 +70,7 @@ div.main-principal{
 
 
 div.foto{
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -45,10 +84,17 @@ div.foto img{
 }
 
 div.sobremim{
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 10%;
+    font-size: larger;
+    text-align: justify;
+    
+}
+
+div.sobremim > div.escrita > div.up{
+    padding-bottom: 30px;
 }
